@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="영어공부, 영어회화, 영어실력 향상, 영어학습 방법, 영어챌린지, 매일영 챌린지, 매일영챌린지, 매일영첼린지, 매일영 첼린지, Maeil English Challenge, 영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까, 과장 없는 영어 학습 프로그램, 영어 공부 기대와 현실, 꾸준함으로 영어 실력 올리는 법, 실전 중심 영어 학습법">
+    <meta name="description" content="영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까? 과장 없는 영어 학습 프로그램으로 꾸준함으로 영어 실력 올리는 법을 제시합니다. 실전 중심 영어 학습법, 매일영 챌린지로 영어공부와 영어회화 실력을 향상시켜보세요.">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream1.otf') format('opentype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream2.otf') format('opentype');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream3.otf') format('opentype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream4.otf') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream5.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream6.otf') format('opentype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream7.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream8.otf') format('opentype');
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+        }
+        @font-face {
+        font-family: 'TheSCoD';
+        src: url('resources/fonts/SCDream9.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+        }
+        html, body {
+        font-family: 'TheSCoD', 'Noto Sans KR', 'Noto Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        }
+        
+        .promo-banner {
+        background-color: #ffffff;
+        padding: 14px 20px;
+        text-align: center;
+        width: 100%;
+        border-bottom: none;
+        box-sizing: border-box;
+        }
+        
+        .promo-banner a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-size: 0.95rem;
+        font-weight: 400;
+        display: inline-block;
+        line-height: 1.5;
+        }
+        
+        .promo-banner a:hover {
+        color: #2c2c2c;
+        }
+        
+        .promo-banner .highlight {
+        font-weight: 600;
+        }
+        
+        .promo-banner .arrow {
+        margin-left: 2px;
+        display: inline-block;
+        }
+        
+        .navbar-custom {
+        background-color: #272727;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        }
+        
+        .navbar-nav-custom {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        align-items: center;
+        }
+        
+        .navbar-nav-custom li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        }
+        
+        .navbar-nav-custom a {
+        color: #979797;
+        text-decoration: none;
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.95rem;
+        font-weight: 400;
+        position: relative;
+        }
+        
+        .navbar-nav-custom a.active {
+        color: #ffffff;
+        border-bottom: 2px solid #E60013;
+        }
+        
+        .navbar-nav-custom a:hover {
+        color: #979797;
+        }
+        
+        .hero-section {
+        background-color: #000000;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        }
+        
+        .hero-wrapper {
+        position: relative;
+        width: 1920px;
+        max-width: 100%;
+        }
+        
+        .hero-bg {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+        
+        .hero-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30% 0 25%;
+        gap: 10px;
+        box-sizing: border-box;
+        }
+        
+        .hero-text {
+        color: #ffffff;
+        flex: 0 0 auto;
+        z-index: 2;
+        }
+        
+        .hero-text h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin: 0 0 10px 0;
+        }
+        
+        .hero-text p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0;
+        }
+        
+        .hero-image {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 1;
+        max-width: 32%;
+        align-self: flex-end;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        }
+        
+        .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="promo-banner">
+        <a href="#">
+            지금 레벨테스트하고 <span class="highlight">1,000</span>원 쿠폰 받자! <span class="arrow">></span>
+        </a>
+    </header>
+    
+    <nav class="navbar-custom">
+        <ul class="navbar-nav-custom">
+            <li><a href="#" class="active">영상 시청 결과</a></li>
+            <li><a href="#">비즈니스 PT 소개</a></li>
+            <li><a href="#">비즈니스 PT FAQ</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero-section">
+        <div class="hero-wrapper">
+            <img src="resources/lp-gen-img-1-1.png" alt="Hero background" class="hero-bg">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>2026년 영어 스피킹<br>잘하는 방법</h1>
+                    <p>매일영 챌린지로 완성하는<br>실전 영어 말하기</p>
+                </div>
+                <div class="hero-image">
+                    <img src="resources/lp-gen-img-1-0.png" alt="매일영 챌린지">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
