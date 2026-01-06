@@ -395,25 +395,59 @@
         .footer-left {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         }
         
-        .footer-right {
+        .footer-info {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #666666;
+        text-align: left;
+        max-width: 500px;
+        order: 1;
+        }
+        
+        .footer-info p {
+        margin: 0 0 4px 0;
+        }
+        
+        .footer-social {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 20px;
+        gap: 12px;
+        order: 2;
+        }
+        
+        .footer-social a {
+        width: 32px;
+        height: 32px;
+        background-color: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        }
+        
+        .footer-social a:hover {
+        background-color: #333333;
+        }
+        
+        .footer-social img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
         }
         
         .footer-logo {
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 0;
+        order: 3;
         }
         
         .footer-logo img {
-        width: 18px;
-        height: 18px;
+        display: none;
         }
         
         .footer-logo-text {
@@ -423,11 +457,17 @@
         }
         
         .footer-logo-text .bold {
-        font-weight: 300;
+        font-weight: 700;
         }
         
         .footer-logo-text .regular {
         font-weight: 300;
+        }
+        
+        .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         }
         
         .footer-nav {
@@ -442,49 +482,11 @@
         font-size: 13px;
         font-weight: 300;
         white-space: nowrap;
+        text-align: right;
         }
         
         .footer-nav a:hover {
         color: #666666;
-        }
-        
-        .footer-social {
-        display: flex;
-        gap: 12px;
-        }
-        
-        .footer-social a {
-        width: 28px;
-        height: 28px;
-        background-color: #000000;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        }
-        
-        .footer-social a:hover {
-        background-color: #333333;
-        }
-        
-        .footer-social img {
-        width: 16px;
-        height: 16px;
-        object-fit: contain;
-        }
-        
-        .footer-info {
-        font-size: 11px;
-        font-weight: 300;
-        line-height: 1.7;
-        color: #666666;
-        text-align: right;
-        max-width: 400px;
-        }
-        
-        .footer-info p {
-        margin: 0 0 4px 0;
         }
     </style>
 </head>
@@ -844,22 +846,12 @@
         <div class="footer-inner">
             <div class="footer-top">
                 <div class="footer-left">
-                    <div class="footer-logo">
-                        <img src="resources/pweng.png" alt="PowerEnglish">
-                        <div class="footer-logo-text">
-                            <span class="bold">PowerEnglish</span> <span class="regular">Education</span>
-                        </div>
+                    <div class="footer-info">
+                        <p>와이즈에듀케이션아이(주) 사이트명: 파워잉글리쉬 대표이사 전상현</p>
+                        <p>사업자등록번호: 217-81-44736 통신판매신고번호: 2014-서울도봉-0233호</p>
+                        <p>서울본사: 서울시 노원구 한글비석로 245 두타빌 B동 7층 713호</p>
+                        <p>대표번호: 1688-8672 개인정보관리 책임자: 안희영 [powerenglish@pweng.net]</p>
                     </div>
-                    <nav class="footer-nav">
-                        <a href="https://m.pweng.net/login-v2.php">로그인</a>
-                        <a href="https://m.pweng.net/me/support.php">상담 요청</a>
-                        <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
-                        <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
-                        <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
-                        <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
-                    </nav>
-                </div>
-                <div class="footer-right">
                     <div class="footer-social">
                         <a href="https://www.facebook.com/pweng.net/" target="_blank" aria-label="Facebook">
                             <img src="resources/facebook.png" alt="Facebook">
@@ -871,12 +863,22 @@
                             <img src="resources/blog.png" alt="Blog">
                         </a>
                     </div>
-                    <div class="footer-info">
-                        <p>와이즈에듀케이션아이(주) 사이트명: 파워잉글리쉬 대표이사 전상현</p>
-                        <p>사업자등록번호: 217-81-44736 통신판매신고번호: 2014-서울도봉-0233호</p>
-                        <p>서울본사: 서울시 노원구 한글비석로 245 두타빌 B동 7층 713호 대표번호 1688-8672</p>
-                        <p>개인정보관리 책임자: 안희영 [powerenglish@pweng.net]</p>
+                    <div class="footer-logo">
+                        <img src="resources/pweng.png" alt="PowerEnglish">
+                        <div class="footer-logo-text">
+                            <span class="bold">PowerEnglish</span> <span class="regular">Education</span>
+                        </div>
                     </div>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="https://m.pweng.net/login-v2.php">로그인</a>
+                        <a href="https://m.pweng.net/me/support.php">상담 요청</a>
+                        <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
+                        <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
+                        <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
+                        <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
+                    </nav>
                 </div>
             </div>
         </div>
