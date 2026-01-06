@@ -196,14 +196,15 @@
         height: 340px;
         display: flex;
         align-items: flex-end;
-        justify-content: center;
-        gap: 40px;
+        justify-content: flex-start;
+        gap: 0px;
         box-sizing: border-box;
+        padding: 0;
         }
         
         .hero-text {
         color: #ffffff;
-        width: 460px;
+        width: 540px;
         height: 340px;
         z-index: 2;
         flex-shrink: 0;
@@ -217,7 +218,7 @@
         font-size: 40px;
         line-height: 52px;
         margin: 0 0 10px 0;
-        width: 460px;
+        width: 540px;
         }
         
         .hero-text p {
@@ -225,7 +226,7 @@
         font-size: 19.2px;
         line-height: 28.8px;
         margin: 0;
-        width: 460px;
+        width: 540px;
         }
         
         .hero-image {
@@ -236,6 +237,7 @@
         width: 220px;
         height: 340px;
         flex-shrink: 0;
+        margin-left: 0;
         }
         
         .hero-image img {
@@ -354,7 +356,7 @@
         color: #000000;
         text-decoration: none;
         padding: 14px 28px;
-        border-radius: 8px;
+        border-radius: 25px;
         font-size: 18px;
         font-weight: 600;
         gap: 8px;
@@ -487,6 +489,328 @@
         
         .footer-nav a:hover {
         color: #666666;
+        }
+        
+        .footer-mobile {
+        display: none;
+        }
+        
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+        .promo-banner {
+        padding: 10px 15px;
+        }
+        
+        .promo-banner a {
+        font-size: 0.85rem;
+        }
+        
+        .navbar-custom {
+        height: 50px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        }
+        
+        .navbar-nav-custom {
+        flex-direction: row;
+        width: auto;
+        min-width: auto;
+        justify-content: flex-start;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        }
+        
+        .navbar-nav-custom li {
+        width: auto;
+        flex-shrink: 0;
+        height: 50px;
+        }
+        
+        .navbar-nav-custom a {
+        width: auto;
+        padding: 0 20px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        }
+        
+        .hero-wrapper {
+        width: 100%;
+        }
+        
+        .hero-bg {
+        height: 150px;
+        min-height: 150px;
+        }
+        
+        .hero-content {
+        width: 90%;
+        max-width: 100%;
+        height: 150px;
+        min-height: 150px;
+        flex-direction: row;
+        padding: 0 35px 0 35px;
+        gap: 15px;
+        align-items: flex-end;
+        justify-content: space-between;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 0;
+        }
+        
+        .hero-text {
+        width: 60%;
+        height: auto;
+        text-align: left;
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        }
+        
+        .hero-text h1 {
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0 0 6px 0;
+        }
+        
+        .hero-text p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+        }
+        
+        .hero-image {
+        width: 35%;
+        height: auto;
+        flex-shrink: 0;
+        align-items: flex-end;
+        align-self: flex-end;
+        }
+        
+        .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: 140px;
+        object-fit: contain;
+        display: block;
+        }
+        
+        .content-section {
+        padding: 40px 20px;
+        }
+        
+        .section-inner {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        }
+        
+        .section-inner h2 {
+        font-size: 20px;
+        }
+        
+        .section-inner p {
+        font-size: 16px;
+        }
+        
+        .section-inner ul {
+        padding-left: 0;
+        }
+        
+        .section-inner ul li {
+        font-size: 16px;
+        }
+        
+        .cta-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        }
+        
+        .cta-text {
+        order: 2;
+        }
+        
+        .cta-text h2 {
+        margin-bottom: 8px;
+        }
+        
+        .kakao-button {
+        width: auto;
+        order: 1;
+        }
+        
+        .footer {
+        padding: 30px 0;
+        }
+        
+        .footer-inner {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        }
+        
+        .footer-top {
+        display: none;
+        }
+        
+        .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        }
+        
+        .footer-mobile .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        }
+        
+        .footer-mobile .footer-logo img {
+        width: 18px;
+        height: 18px;
+        }
+        
+        .footer-mobile .footer-logo-text {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 300;
+        }
+        
+        .footer-mobile .footer-logo-text .bold {
+        font-weight: 700;
+        }
+        
+        .footer-mobile .footer-logo-text .regular {
+        font-weight: 300;
+        }
+        
+        .footer-mobile .footer-social {
+        display: flex;
+        gap: 12px;
+        }
+        
+        .footer-mobile .footer-social a {
+        width: 32px;
+        height: 32px;
+        background-color: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        }
+        
+        .footer-mobile .footer-social a:hover {
+        background-color: #333333;
+        }
+        
+        .footer-mobile .footer-social img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        }
+        
+        .footer-mobile .footer-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 12px 20px;
+        justify-items: center;
+        }
+        
+        .footer-mobile .footer-nav a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        }
+        
+        .footer-mobile .footer-nav a:hover {
+        color: #666666;
+        }
+        
+        .footer-mobile .footer-info {
+        font-size: 9px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #666666;
+        text-align: center;
+        margin-top: 10px;
+        }
+        
+        .footer-mobile .footer-info p {
+        margin: 0 0 4px 0;
+        }
+        }
+        
+        @media (max-width: 480px) {
+        .hero-bg {
+        height: 150px;
+        min-height: 150px;
+        }
+        
+        .hero-content {
+        width: 95%;
+        height: 150px;
+        min-height: 150px;
+        padding: 0 30px 0 30px;
+        gap: 12px;
+        align-items: flex-end;
+        }
+        
+        .hero-text {
+        width: 60%;
+        align-self: center;
+        }
+        
+        .hero-text h1 {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 4px 0;
+        }
+        
+        .hero-text p {
+        font-size: 11px;
+        line-height: 16px;
+        }
+        
+        .hero-image {
+        width: 35%;
+        align-self: flex-end;
+        }
+        
+        .hero-image img {
+        max-height: 140px;
+        }
+        
+        .section-inner h2 {
+        font-size: 18px;
+        }
+        
+        .section-inner p {
+        font-size: 14px;
+        }
+        
+        .section-inner ul li {
+        font-size: 14px;
+        }
+        
+        .footer-nav {
+        grid-template-columns: 1fr;
+        }
         }
     </style>
 </head>
@@ -879,6 +1203,39 @@
                         <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
                         <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
                     </nav>
+                </div>
+            </div>
+            <div class="footer-mobile">
+                <div class="footer-logo">
+                    <img src="resources/pweng.png" alt="PowerEnglish">
+                    <div class="footer-logo-text">
+                        <span class="bold">PowerEnglish</span> <span class="regular">Education</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/pweng.net/" target="_blank" aria-label="Facebook">
+                        <img src="resources/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/pweng_english/" target="_blank" aria-label="Instagram">
+                        <img src="resources/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://blog.naver.com/pweng8672" target="_blank" aria-label="Blog">
+                        <img src="resources/blog.png" alt="Blog">
+                    </a>
+                </div>
+                <nav class="footer-nav">
+                    <a href="https://m.pweng.net/login-v2.php">로그인</a>
+                    <a href="https://m.pweng.net/me/support.php">상담 요청</a>
+                    <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
+                    <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
+                    <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
+                    <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
+                </nav>
+                <div class="footer-info">
+                    <p>와이즈에듀케이션아이(주) 사이트명: 파워잉글리쉬 대표이사 전상현</p>
+                    <p>사업자등록번호: 217-81-44736 통신판매신고번호: 2014-서울도봉-0233호</p>
+                    <p>서울본사: 서울시 노원구 한글비석로 245 두타빌 B동 7층 713호</p>
+                    <p>대표번호: 1688-8672 개인정보관리 책임자: 안희영 [powerenglish@pweng.net]</p>
                 </div>
             </div>
         </div>
