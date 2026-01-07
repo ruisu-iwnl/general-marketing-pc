@@ -1061,7 +1061,7 @@
         </div>
     </section>
 
-    <section id="intro" class="content-section" style="background-color: #333333; height: 80px; padding: 0;">
+    <section id="intro" class="content-section" style="background-color: #333333; height: 80px; padding: 0 ;text-align: center;">
         <div class="section-inner">
             <h2 style="color:white; margin-bottom: 0;">매일영 챌린지 소개</h2>
         </div>
@@ -1140,7 +1140,7 @@
         </div>
     </section>
 
-    <section id="faq" class="content-section" style="background-color: #333333; height: 80px; padding: 0;">
+    <section id="faq" class="content-section" style="background-color: #333333; height: 80px; padding: 0; text-align: center;">
         <div class="section-inner">
             <h2 style="color:white; margin-bottom: 0;">매일영챌린지 FAQ</h2>
         </div>
