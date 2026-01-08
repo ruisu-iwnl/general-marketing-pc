@@ -354,8 +354,9 @@
         .section-inner ul.square-bullets li {
         padding-left: 0;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 12px;
+        line-height: 1.6;
         }
         
         .section-inner ul.square-bullets li:before {
@@ -363,16 +364,18 @@
         position: static;
         background-color: #000000;
         color: #ffffff;
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 14px;
+        font-size: 11px;
         font-weight: 300;
         flex-shrink: 0;
-        margin-top: 2px;
-        border-radius: 3px;
+        margin-top: 0;
+        border-radius: 2px;
+        line-height: 1;
         }
         
         .cta-section {
@@ -692,6 +695,16 @@
         font-size: 16px;
         }
         
+        .section-inner ul.square-bullets li {
+        align-items: center;
+        line-height: 1.6;
+        }
+        
+        .section-inner ul.square-bullets li:before {
+        margin-top: 0;
+        line-height: 1;
+        }
+        
         .cta-section {
         flex-direction: column;
         align-items: center;
@@ -883,6 +896,16 @@
         
         .section-inner ul li {
         font-size: 14px;
+        }
+        
+        .section-inner ul.square-bullets li {
+        align-items: center;
+        line-height: 1.6;
+        }
+        
+        .section-inner ul.square-bullets li:before {
+        margin-top: 0;
+        line-height: 1;
         }
         
         .footer-nav {
