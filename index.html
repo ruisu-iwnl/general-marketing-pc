@@ -95,7 +95,7 @@
         }
         
         .promo-banner {
-        background-color: #ffffff;
+        background-color: #112747;
         padding: 14px 20px;
         text-align: center;
         width: 100%;
@@ -106,7 +106,7 @@
         
         .promo-banner a {
         text-decoration: none;
-        color: #2c2c2c;
+        color: #FFFFFF;
         font-size: 0.95rem;
         font-weight: 400;
         display: inline-block;
@@ -114,7 +114,7 @@
         }
         
         .promo-banner a:hover {
-        color: #2c2c2c;
+        color: #FFFFFF;
         }
         
         .promo-banner .highlight {
@@ -127,7 +127,7 @@
         }
         
         .navbar-custom {
-        background-color: #272727;
+        background-color: #FFFFFF;
         height: 50px;
         display: flex;
         align-items: center;
@@ -178,7 +178,7 @@
         }
         
         .navbar-nav-custom a {
-        color: #979797;
+        color: #606466;
         text-decoration: none;
         padding: 0 20px;
         height: 100%;
@@ -193,11 +193,11 @@
         }
         
         .navbar-nav-custom a.active {
-        color: #ffffff;
+        color: #333333;
         }
         
         .navbar-nav-custom a:hover {
-        color: #979797;
+        color: #606466;
         }
         
         .hero-section {
@@ -217,6 +217,18 @@
         position: relative;
         width: 100%;
         max-width: 1920px;
+        }
+        
+        .hero-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #C9E8FF, #F7E7FA);
+        z-index: 0;
+        pointer-events: none;
         }
         
         .hero-bg {
@@ -242,7 +254,7 @@
         }
         
         .hero-text {
-        color: #ffffff;
+        color: #000000;
         width: 540px;
         height: 340px;
         z-index: 2;
@@ -418,6 +430,51 @@
         height: 24px;
         }
         
+        .cta-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF3D5C;
+        color: #FFFFFF;
+        text-decoration: none;
+        width: 239px;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 24px;
+        }
+        
+        .cta-button:hover {
+        background-color: #E63552;
+        color: #FFFFFF;
+        }
+        
+        .cards-container {
+        width: 989px;
+        margin: 24px auto;
+        position: relative;
+        transform-origin: center top;
+        }
+        
+        .card-number {
+        width: 40px;
+        height: 38px;
+        font-weight: 600;
+        color: #C1BFCE;
+        margin-bottom: 20px;
+        font-size: 32px;
+        }
+        
+        .card-icon {
+        position: absolute;
+        bottom: 36px;
+        left: 710px;
+        width: 149px;
+        height: 167px;
+        object-fit: contain;
+        }
+        
         .footer {
         background-color: #f8f8f8;
         width: 100%;
@@ -540,6 +597,19 @@
         .footer-mobile {
         display: none;
         }
+
+        .video-wrapper {
+            max-width: 600px;
+            aspect-ratio: 2 / 1;
+            margin: 24px auto 0;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
@@ -677,6 +747,19 @@
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
+        }
+        
+        .cards-container {
+        width: 100%;
+        max-width: 989px;
+        }
+        
+        .cards-container > div {
+        width: 100% !important;
+        max-width: 989px;
+        height: auto !important;
+        min-height: 376px;
+        padding: 18px 16px 16px 16px;
         }
         
         .section-inner h2 {
@@ -908,6 +991,25 @@
         line-height: 1;
         }
         
+        .cards-container {
+        width: 100%;
+        max-width: 989px;
+        }
+        
+        .cards-container > div {
+        width: 100% !important;
+        max-width: 989px;
+        height: auto !important;
+        min-height: 300px;
+        padding: 16px 14px 80px 14px;
+        margin: 20px auto 0 !important;
+        }
+        
+        .card-icon {
+        width: 120px !important;
+        height: 134px !important;
+        }
+        
         .footer-nav {
         grid-template-columns: 1fr;
         }
@@ -974,6 +1076,9 @@
                 <li data-number="3">예전보다 영어가 덜 무섭다</li>
             </ul>
             <p>라고 말하는 사례는 분명히 나옵니다. 하지만 이런 변화는 하루아침에, 아무 노력 없이 생기지 않습니다.</p>
+
+            <!-- a review section will be kept here -->
+            
         </div>
     </section>
     
@@ -987,7 +1092,18 @@
                 <li data-number="3">틀린 표현이 바로 교정되는 루틴</li>
             </ul>
             <p>을 통해 많은 참여자들이 공통적으로 도달하는 변화를 만듭니다.</p>
+        
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/bNwXm93di54"
+                    title="Video class cut"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
+        
     </section>
     
     <section class="content-section bg-gray">
@@ -1027,6 +1143,7 @@
         <div class="section-inner">
             <h2>그래서 단언할 수 있습니다</h2>
             <p>영어 실력 향상은 대단한 무언가가 아니라 시스템 문제입니다.<br>매일영 챌린지는 "특별한 사람만 되게 만드는 프로그램"이 아닙니다.<br>누구나 따라올 수 있도록 영어를 생활 루틴으로 설계한 도구입니다.</p>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1101,6 +1218,7 @@
         <div class="section-inner">
             <h2>1. 이미 영어로 소통·업무·생활이 완성된 분이라면</h2>
             <p>이미 영어로 업무를 처리하고, 해외 커뮤니케이션에 전혀 문제가 없다면<br>저희가 도움드릴 수 있는 영역은 많지 않습니다.<br>이 과정은 아직 영어가 장벽으로 느껴지는 분들을 위한 훈련입니다.</p>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1169,23 +1287,74 @@
         </div>
     </section>
 
-    <section class="content-section bg-white">
+    <section class="content-section bg-gray">
         <div class="section-inner">
-            <h2>매일영 챌린지는 어떻게 구성되어 있나요?</h2>
-            <p>매일영 챌린지는<br>온라인 학습 콘텐츠 + 원샷 스케줄 실행 루틴으로 구성된 영어 스피킹 훈련 프로그램입니다.</p>
-            <p>온라인 학습은 주차별 핵심 영상 콘텐츠 + 매일 실행할 스피킹 과제로 구성되어 있습니다.</p>
-            <p>학습자는 매일 집에서 본인의 페이스로 영상을 공부하는 것이 아니라 직접 말하는 구조로 문장이 쌓입니다.</p>
+            <h2>의지는 필요 없습니다. 매일영의 '밀착 독촉'이 당신의 입을 열어드립니다!</h2>
+            <p>"혼자 하면 작심삼일이지만, 나를 전담 마크하는 강사가 있다면 달라집니다." </p>
+            <h2>[매일영 챌린지 3단계 스피킹 루틴]</h2>
+            <p>매일영은 단순히 수다를 떠는 원어민 친구를 매칭해드리는 서비스가 아닙니다. 공부를 안 할 수 없게 설계된 시스템으로 당신의 실력을 강제로 끌어올립니다.</p>
+            
+            <div class="cards-container">
+                <div style="width: 989px; height: 376px; margin: 0 auto; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                    <div class="card-number">01</div>
+                    <h2>"녹음 인증" — 안 하면 수업 참여 불가</h2>
+                    <p>수업 전, 온라인 교재의 핵심 문장을 직접 읽고 녹음하여 제출해야 합니다. 미션을 완<br>료해야만 그날의 수업에 참여할 수 있는 자격이 주어집니다.</p>
+                    <ul>
+                        <li>실행 방식: 전담 강사가 카카오톡으로 직접 숙제를 내주고, 학습자는 'Practice' <br> 섹션 문장 녹음본을 강사에게 제출합니다.</li>
+                        <li>강제 장치: 나만을 기다리는 강사의 1:1 실시간 체크! '보는 공부'를 '말하는 공<br>부'로 바꾸는 가장 확실한 강제성입니다.</li>
+                    </ul>
+                    <img src="resources/ico-spec-1.png" alt="" class="card-icon">
+                    <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 100px; right: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #F3A268; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 160px; left: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #34E7A5; opacity: 0.3;"></div>
+                </div>
+                <div style="width: 989px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                    <div class="card-number">02</div>
+                    <h2>"외워 뱉기" — 교재를 덮어야 시작되는 수업</h2>
+                    <p>수업이 시작되면 교재에 의존할 수 없습니다. 강사는 교재 내용을 바탕으로 기습 질<br>문을 던지고, 학습자는 오직 암기한 내용을 바탕으로 즉각 대답해야 합니다.</p>
+                    <ul>
+                        <li>실행 방식: "교재 15페이지 세 번째 문장, '회의를 미루다'를 넣어서 과거형으로<br>말해보세요"</li>
+                        <li>훈련 효과: 텍스트 의존도를 0%로 낮춰, 전화가 오기 전 5분 동안 인생에서 가장<br>집중력 높은 '몰입의 시간'을 갖게 됩니다.</li>
+                    </ul>
+                    <img src="resources/ico-spec-2.png" alt="" class="card-icon">
+                    <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 100px; right: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #F3A268; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 160px; left: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #34E7A5; opacity: 0.3;"></div>
+                </div>
+                <div style="width: 989px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                    <div class="card-number">03</div>
+                    <h2>"강제 롤플레이" — 문장을 상황으로 바꾸는 시간</h2>
+                    <p>교재 속 딱딱한 문장들을 실제 대화로 바꿉니다. 강사와 함께 설정된 상황 속으로 들<br>어가 배운 표현을 완벽히 써먹을 때까지 훈련은 계속됩니다.</p>
+                    <ul>
+                        <li>실행 방식: "제가 점원이고 학생분이 손님입니다. 교재의 예약 문장을 활용해 대<br>화를 시작하세요!"</li>
+                        <li>훈련 효과: 글로만 보던 문장이 실제 상황에서 '살아있는 언어'로 변환됩니다. 1:1<br> 수업이기에 틀린 발음과 뉘앙스까지 실시간으로 완벽 교정받습니다.</li>
+                    </ul>
+                    <img src="resources/ico-spec-3.png" alt="" class="card-icon">
+                    <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 100px; right: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #F3A268; opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 160px; left: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #34E7A5; opacity: 0.3;"></div>
+                </div>
+            </div>
+
+            <h2>"강제 롤플레이" — 문장을 상황으로 바꾸는 시간</h2>
+            <p>"전화영어든 화상영어든, 매일영의 루틴은 똑같습니다."</p>
+            <ul>
+                <li>읽고 녹음하게 만들고 (Pre-Mission)</li>
+                <li>외워서 대답하게 만들고 (Blind Test)</li>
+                <li>실전처럼 써먹게 만드는 (Role-Play)</li>
+            </ul>
+            <p>이 3단계를 거치지 않으면 매일영이 아닙니다. 나보다 나를 더 챙기는 전담 강사의 밀착 피드백으로 공부의 끈을 놓지 않게 해드립니다. 지금 바로 경험하세요.</p>
         </div>
     </section>
     
-    <section class="content-section bg-gray">
+    <section class="content-section bg-white">
         <div class="section-inner">
             <h2>매일영 챌린지는 매일 참여해야 하나요?</h2>
             <p>네, 매일 참여하는 것을 전제로 설계된 프로그램입니다.<br>다만 하루 학습 분량은 20분 내외로, 직장인·학생 모두 병행이 가능하도록 구성되어 있습니다.</p>
         </div>
     </section>
     
-    <section class="content-section bg-white">
+    <section class="content-section bg-gray">
         <div class="section-inner">
             <h2>실시간 수업이나 오프라인 수업도 포함되나요?</h2>
             <p>아니요.</p>
@@ -1193,7 +1362,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-gray">
+    <section class="content-section bg-white">
         <div class="section-inner">
             <h2>영어 회화 초보자도 참여할 수 있나요?</h2>
             <p>네, 가능합니다.</p>
@@ -1207,7 +1376,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-white">
+    <section class="content-section bg-gray">
         <div class="section-inner">
             <h2>영어 회화 초보자도 참여할 수 있나요?</h2>
             <p>네, 가능합니다.</p>
@@ -1221,7 +1390,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-gray">
+    <section class="content-section bg-white">
         <div class="section-inner">
             <h2>강사가 개인적으로 피드백이나 컨설팅을 해주나요?</h2>
             <p>매일영 챌린지는 개인 맞춤 컨설팅이나 1 : 1 코칭을 제공하지 않습니다. 대신,</p>
@@ -1234,7 +1403,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-white">
+    <section class="content-section bg-gray">
         <div class="section-inner">
             <h2>일정이 불규칙한데 참여할 수 있을까요?</h2>
             <p>가능합니다.</p>
@@ -1242,7 +1411,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-gray">
+    <section class="content-section bg-white">
         <div class="section-inner">
             <h2>매일영 챌린지의 목표는 무엇인가요?</h2>
             <p>매일영 챌린지의 목표는 단순합니다.</p>
@@ -1254,7 +1423,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-white">
+    <section class="content-section bg-gray">
         <div class="section-inner">
             <h2>이런 분들께 추천합니다</h2>
             <ul>
@@ -1266,7 +1435,7 @@
         </div>
     </section>
     
-    <section class="content-section bg-gray">
+    <section class="content-section bg-white">
         <div class="section-inner cta-section">
             <div class="cta-text">
                 <h2>궁금한 점이 있으신가요?</h2>
