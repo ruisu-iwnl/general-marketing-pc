@@ -442,7 +442,7 @@
         border-radius: 5px;
         font-size: 18px;
         font-weight: 600;
-        margin: 24px auto 0;
+        margin: 24px;
         }
         
         .cta-button:hover {
