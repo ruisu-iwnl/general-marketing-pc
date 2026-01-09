@@ -451,7 +451,7 @@
         }
         
         .cards-container {
-        width: 989px;
+        width: 900px;
         margin: 24px auto;
         position: relative;
         transform-origin: center top;
@@ -751,12 +751,12 @@
         
         .cards-container {
         width: 100%;
-        max-width: 989px;
+        max-width: 900px;
         }
         
         .cards-container > div {
         width: 100% !important;
-        max-width: 989px;
+        max-width: 900px;
         height: auto !important;
         min-height: 376px;
         padding: 18px 16px 16px 16px;
@@ -993,12 +993,12 @@
         
         .cards-container {
         width: 100%;
-        max-width: 989px;
+        max-width: 900px;
         }
         
         .cards-container > div {
         width: 100% !important;
-        max-width: 989px;
+        max-width: 900px;
         height: auto !important;
         min-height: 300px;
         padding: 16px 14px 80px 14px;
@@ -1295,7 +1295,7 @@
             <p>매일영은 단순히 수다를 떠는 원어민 친구를 매칭해드리는 서비스가 아닙니다. 공부를 안 할 수 없게 설계된 시스템으로 당신의 실력을 강제로 끌어올립니다.</p>
             
             <div class="cards-container">
-                <div style="width: 989px; height: 376px; margin: 0 auto; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                <div style="width: 900px; height: 376px; margin: 0 auto; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">01</div>
                     <h2>"녹음 인증" — 안 하면 수업 참여 불가</h2>
                     <p>수업 전, 온라인 교재의 핵심 문장을 직접 읽고 녹음하여 제출해야 합니다. 미션을 완<br>료해야만 그날의 수업에 참여할 수 있는 자격이 주어집니다.</p>
@@ -1308,7 +1308,7 @@
                     <div style="position: absolute; top: 100px; right: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #F3A268; opacity: 0.3;"></div>
                     <div style="position: absolute; top: 160px; left: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #34E7A5; opacity: 0.3;"></div>
                 </div>
-                <div style="width: 989px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                <div style="width: 900px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">02</div>
                     <h2>"외워 뱉기" — 교재를 덮어야 시작되는 수업</h2>
                     <p>수업이 시작되면 교재에 의존할 수 없습니다. 강사는 교재 내용을 바탕으로 기습 질<br>문을 던지고, 학습자는 오직 암기한 내용을 바탕으로 즉각 대답해야 합니다.</p>
@@ -1321,7 +1321,7 @@
                     <div style="position: absolute; top: 100px; right: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #F3A268; opacity: 0.3;"></div>
                     <div style="position: absolute; top: 160px; left: 50px; width: 10px; height: 10px; border-radius: 50%; background-color: #34E7A5; opacity: 0.3;"></div>
                 </div>
-                <div style="width: 989px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
+                <div style="width: 900px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">03</div>
                     <h2>"강제 롤플레이" — 문장을 상황으로 바꾸는 시간</h2>
                     <p>교재 속 딱딱한 문장들을 실제 대화로 바꿉니다. 강사와 함께 설정된 상황 속으로 들<br>어가 배운 표현을 완벽히 써먹을 때까지 훈련은 계속됩니다.</p>
