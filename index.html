@@ -913,6 +913,24 @@
         .footer-mobile .footer-info p {
         margin: 0 0 4px 0;
         }
+        
+        .review-card {
+        width: 100%;
+        max-width: 900px;
+        padding: 14px;
+        }
+        
+        .review-rating-text {
+        font-size: 11px;
+        }
+        
+        .review-author {
+        font-size: 11px;
+        }
+        
+        .review-body {
+        font-size: 11px;
+        }
         }
         
         @media (max-width: 480px) {
@@ -1013,6 +1031,87 @@
         .footer-nav {
         grid-template-columns: 1fr;
         }
+        
+        .review-card {
+        width: 100%;
+        max-width: 900px;
+        padding: 14px;
+        }
+        
+        .review-stars-container {
+        flex-wrap: wrap;
+        gap: 2px;
+        }
+        
+        .review-rating-text {
+        font-size: 11px;
+        margin-left: 2px;
+        }
+        
+        .review-author {
+        font-size: 11px;
+        flex-wrap: wrap;
+        }
+        
+        .review-body {
+        font-size: 11px;
+        }
+        }
+
+        .review-card {
+        width: 100%;
+        max-width: 900px;
+        background-color: white;
+        padding: 16px 16px 16px 16px;
+        box-sizing: border-box;
+        position: relative;
+        }
+        
+        .review-stars-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 8px;
+        }
+        
+        .review-star {
+        color: #FEA439;
+        font-size: 12px;
+        }
+        
+        .review-rating-text {
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: 4px;
+        }
+        
+        .review-author {
+        font-size: 12px;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        }
+        
+        .review-label-pill {
+        font-size: 10px;
+        font-weight: 300;
+        color: #00A6FD;
+        background: transparent;
+        border: 1px solid #00A6FD;
+        border-radius: 50px;
+        padding: 2px 8px;
+        display: inline-block;
+        }
+        
+        .review-body {
+        font-size: 12px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.5;
         }
     </style>
 </head>
@@ -1077,7 +1176,221 @@
             </ul>
             <p>라고 말하는 사례는 분명히 나옵니다. 하지만 이런 변화는 하루아침에, 아무 노력 없이 생기지 않습니다.</p>
 
-            <!-- a review section will be kept here -->
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Making Grammar Incredibly Fun 1]</span>
+                </div>
+                <div class="review-author">
+                    정시훈 (2025-08-11)
+                    <span class="review-label-pill">레벨테스트</span>
+                </div>
+                <div class="review-body">
+                    저희아이가 전화영어 해주고싶어 레벨테스트신청했어요 선생님께서 질문도 해주시고 테스트후에 문법설명해주셔서 도움이 되어요 저희아이가 고등학생인데 계속 수업하도록 얘기하고 있어요 선생님감사합니다^^
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Senior Lower Intermediate 1]</span>
+                </div>
+                <div class="review-author">
+                    전서연 (2025-08-05)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    대화가 잘 통해서 좋았고 꼼꼼하게 틀린 말에 대해 고쳐주셔서 도움이 많이 되고 있습니다~
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    손영희 (2025-09-22)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    선생님이 수업을 많이 해보신 것 같은 느낌이 드네요. 자연스럽게 잘 이끌어주시고 주제 채택이나 어법 교정이 좋았습니다.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Business Pattern English 1]</span>
+                </div>
+                <div class="review-author">
+                    전연우 (2025-08-05)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    선생님이 에너지가 많으셔서 활기찬 느낌이라 아침 수업인데도 힘들지 않고 수업하기 좋습니다.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    이인호 (2025-06-26)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    선생님께서 경험이 풍부하신 것 같아 수업이 매우 만족스러웠습니다. 수업이 체계적으로 잘 구성되어 있었고, 학생의 수준과 반응에 따라 유연하게 수업을 이끌어 가는 능력이 인상적이었습니다.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Senior Lower Intermediate 1]</span>
+                </div>
+                <div class="review-author">
+                    이현준 (2025-04-01)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    발음이 굉장히 좋아서 듣는데 문제가 없었습니다.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    류은경 (2024-09-10)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    항상 질문거리도 던져주시고 많이 영어 뱉어볼 수 있도록 노력해주셔서 감사드려요!
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    류은정 (2024-09-04)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    발음 교정도 즉각적으로 해주시고, 한국어에 대한 이해도가 높으신지 제가 하고 싶은 말을 잘 캐치하셔서 영어로 말씀해주십니다 덕분에 수업이 매우 만족스럽습니다.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    김선아 (2024-03-21)
+                    <span class="review-label-pill">레벨테스트</span>
+                </div>
+                <div class="review-body">
+                    친절한 선생님의 말투와 적극적인 호응?태도? 감사했습니다. 많이 떨렸는데 배려해주셔서 감사해요 덕분에 편하게 얘기할 수 있었어요.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Free Talking 1]</span>
+                </div>
+                <div class="review-author">
+                    양예은 (2023-07-11)
+                    <span class="review-label-pill">레벨테스트</span>
+                </div>
+                <div class="review-body">
+                    선생님이 아주 편안하게 진행해주시면서 또 테스트를 해야할 때는 전문적으로 해주시더라구요. 시간분배를 아주 적절히 잘해주셔서 마냥 수다만 떠는 것이 아니라 테스트까지 즐겁게 마쳤습니다. 테스트 내용도 다른곳보다 체계적으로 진행되는 것 같았어요. 단순히 회화만 하는 것에서 그치는것이 아니라서 더 좋았습니다. 그래서 등록해서 공부해려구요. 감사합니다 ^^
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - NEWSPAPER (SENIOR)]</span>
+                </div>
+                <div class="review-author">
+                    김수지 (2023-03-17)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    영자신문 수업 신청해서 어느덧 12차 수업이네요! 홈페이지의 기사 고리 질문이 아니라, 강사님의 주제에 대해 다양한 질문도 해주시고 제 표현에 어색한 부분이 있다면 더 자연스러운 표현으로 말씀해주셔서 일부러 따라해보고 노력하고 있습니다. Beth쌤 수업 짱!
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars-container">
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <i class="bi bi-star-fill review-star"></i>
+                    <span class="review-rating-text">10점[수업교재 - Time To Debate Intermediate 1]</span>
+                </div>
+                <div class="review-author">
+                    강서영 (2025-11-06)
+                    <span class="review-label-pill">수업 후기</span>
+                </div>
+                <div class="review-body">
+                    선생님 너무 좋아요 ㅎㅎ 3개월 수업하고 더 끊어서 하는 중입니다! 제가 좀 느려도 잘 들어주시고 제가 무슨 말 하려는지 아시고 바로바로 좋은 어휘로 고쳐주세요! 늘 너무 감사해요.
+                </div>
+            </div>
             
         </div>
     </section>
