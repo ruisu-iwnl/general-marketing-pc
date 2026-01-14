@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dailychallenge.co.kr/sitemap.xml
