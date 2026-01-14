@@ -1,5 +1,6 @@
-# allow SSL validation path
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^\.well-known/pki-validation/ - [L]
+
+RewriteRule ^\.well-known/ - [L]
+
 </IfModule>
