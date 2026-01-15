@@ -1514,7 +1514,7 @@
         <div class="section-inner">
             <h2>그래서 단언할 수 있습니다</h2>
             <p>영어 실력 향상은 대단한 무언가가 아니라 시스템 문제입니다.<br>매일영 챌린지는 "특별한 사람만 되게 만드는 프로그램"이 아닙니다.<br>누구나 따라올 수 있도록 영어를 생활 루틴으로 설계한 도구입니다.</p>
-            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button level-test-link">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1589,7 +1589,7 @@
         <div class="section-inner">
             <h2>1. 이미 영어로 소통·업무·생활이 완성된 분이라면</h2>
             <p>이미 영어로 업무를 처리하고, 해외 커뮤니케이션에 전혀 문제가 없다면<br>저희가 도움드릴 수 있는 영역은 많지 않습니다.<br>이 과정은 아직 영어가 장벽으로 느껴지는 분들을 위한 훈련입니다.</p>
-            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button level-test-link">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1848,12 +1848,12 @@
                 </div>
                 <div class="footer-right">
                     <nav class="footer-nav">
-                        <a href="https://m.pweng.net/login-v2.php">로그인</a>
-                        <a href="https://m.pweng.net/me/support.php">상담 요청</a>
-                        <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
-                        <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
-                        <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
-                        <a href="https://dailychallenge.co.kr/">PC버전</a>
+                        <a href="https://m.pweng.net/login-v2.php" class="dynamic-link" data-link-type="login">로그인</a>
+                        <a href="https://m.pweng.net/me/support.php" class="dynamic-link" data-link-type="support">상담 요청</a>
+                        <a href="https://m.pweng.net/faq-v2.php" class="dynamic-link" data-link-type="faq">FAQ</a>
+                        <a href="https://m.pweng.net/term-of-use.php" class="dynamic-link" data-link-type="terms">이용약관</a>
+                        <a href="https://m.pweng.net/privacy-policy.php" class="dynamic-link" data-link-type="privacy">개인정보 처리방침</a>
+                        <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">PC버전</a>
                     </nav>
                 </div>
             </div>
@@ -1876,12 +1876,12 @@
                     </a>
                 </div>
                 <nav class="footer-nav">
-                    <a href="https://m.pweng.net/login-v2.php">로그인</a>
-                    <a href="https://m.pweng.net/me/support.php">상담 요청</a>
-                    <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
-                    <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
-                    <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
-                    <a href="https://dailychallenge.co.kr/">PC버전</a>
+                    <a href="https://m.pweng.net/login-v2.php" class="dynamic-link" data-link-type="login">로그인</a>
+                    <a href="https://m.pweng.net/me/support.php" class="dynamic-link" data-link-type="support">상담 요청</a>
+                    <a href="https://m.pweng.net/faq-v2.php" class="dynamic-link" data-link-type="faq">FAQ</a>
+                    <a href="https://m.pweng.net/term-of-use.php" class="dynamic-link" data-link-type="terms">이용약관</a>
+                    <a href="https://m.pweng.net/privacy-policy.php" class="dynamic-link" data-link-type="privacy">개인정보 처리방침</a>
+                    <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">PC버전</a>
                 </nav>
                 <div class="footer-info">
                     <p>와이즈에듀케이션아이(주) 사이트명: 파워잉글리쉬 대표이사 전상현</p>
@@ -1895,132 +1895,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-      <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const smoothScrollEnabled = false;
-          let isScrollingFromClick = false;
-          
-          function initializeActiveNav() {
-              const activeLink = document.querySelector('.navbar-nav-custom a.active');
-              if (activeLink) {
-                  const targetId = activeLink.getAttribute('href');
-                  updateActiveNav(targetId);
-              }
-          }
-          
-          function smoothScrollTo(targetPosition, duration) {
-              const startPosition = window.pageYOffset;
-              const distance = targetPosition - startPosition;
-              let startTime = null;
-              
-              function animation(currentTime) {
-                  if (startTime === null) startTime = currentTime;
-                  const timeElapsed = currentTime - startTime;
-                  const run = ease(timeElapsed, startPosition, distance, duration);
-                  window.scrollTo(0, run);
-                  if (timeElapsed < duration) {
-                      requestAnimationFrame(animation);
-                  } else {
-                      isScrollingFromClick = false;
-                  }
-              }
-              
-              function ease(t, b, c, d) {
-                  t /= d / 2;
-                  if (t < 1) return c / 2 * t * t + b;
-                  t--;
-                  return -c / 2 * (t * (t - 2) - 1) + b;
-              }
-              
-              requestAnimationFrame(animation);
-          }
-
-          function updateActiveNav(targetId) {
-              const navContainer = document.querySelector('.navbar-nav-custom');
-              const links = document.querySelectorAll('.navbar-nav-custom a');
-              
-              links.forEach((link, index) => {
-                  link.classList.remove('active');
-                  if (link.getAttribute('href') === targetId) {
-                      link.classList.add('active');
-                      
-                      if (window.innerWidth > 768) {
-                          navContainer.setAttribute('data-active', index);
-                      } else {
-
-                          const linkRect = link.getBoundingClientRect();
-                          const navRect = navContainer.getBoundingClientRect();
-                          const leftPosition = link.offsetLeft;
-                          const linkWidth = link.offsetWidth;
-                          
-                          const afterElement = navContainer;
-                          afterElement.style.setProperty('--mobile-left', leftPosition + 'px');
-                          afterElement.style.setProperty('--mobile-width', linkWidth + 'px');
-
-                          link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                      }
-                  }
-              });
-          }
-          
-          document.querySelectorAll('a[href^="#"]').forEach(link => {
-              link.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  const targetId = this.getAttribute('href');
-
-                  isScrollingFromClick = true;
-                  updateActiveNav(targetId);
-
-                  if (targetId === '#top') {
-                      if (smoothScrollEnabled) {
-                          smoothScrollTo(0, 400);
-                      } else {
-                          window.scrollTo(0, 0);
-                          isScrollingFromClick = false;
-                      }
-                  } else {
-                      const targetElement = document.querySelector(targetId);
-                      if (targetElement) {
-                          const targetPosition = targetElement.offsetTop - 50;
-                          if (smoothScrollEnabled) {
-                              smoothScrollTo(targetPosition, 400);
-                          } else {
-                              window.scrollTo(0, targetPosition);
-                              isScrollingFromClick = false;
-                          }
-                      }
-                  }
-              });
-          });
-
-          window.addEventListener('scroll', function() {
-              if (isScrollingFromClick) return;
-              
-              const scrollPosition = window.pageYOffset + 150; 
-              
-              const faqSection = document.querySelector('#faq');
-              const introSection = document.querySelector('#intro');
-              
-              let currentSection = '#top';
-              
-              if (faqSection && scrollPosition >= faqSection.offsetTop - 100) {
-                  currentSection = '#faq';
-              } else if (introSection && scrollPosition >= introSection.offsetTop - 100) {
-                  currentSection = '#intro';
-              } else {
-                  currentSection = '#top';
-              }
-              
-              const currentActive = document.querySelector('.navbar-nav-custom a.active');
-              const shouldBeActive = document.querySelector(`a[href="${currentSection}"]`);
-              
-              if (currentActive && shouldBeActive && currentActive !== shouldBeActive) {
-                  updateActiveNav(currentSection);
-              }
-          });
-          
-          initializeActiveNav();
-      });
-      </script>
+      <script src="js/main.js"></script>
 </body>
 </html>
