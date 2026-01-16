@@ -47,7 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.classList.add('active');
                 
                 if (window.innerWidth > 768) {
-                    navContainer.setAttribute('data-active', index);
+                    if (index === 0) {
+                        navContainer.removeAttribute('data-active');
+                    } else {
+                        navContainer.setAttribute('data-active', index);
+                    }
                 } else {
 
                     const linkRect = link.getBoundingClientRect();
@@ -118,6 +122,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (currentActive && shouldBeActive && currentActive !== shouldBeActive) {
             updateActiveNav(currentSection);
+        }
+    });
+    
+    window.addEventListener('resize', function() {
+        const activeLink = document.querySelector('.navbar-nav-custom a.active');
+        if (activeLink) {
+            const targetId = activeLink.getAttribute('href');
+            updateActiveNav(targetId);
         }
     });
     
