@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="영어공부, 영어회화, 영어실력 향상, 영어학습 방법, 영어챌린지, 매일영 챌린지, 매일영챌린지, 매일영첼린지, 매일영 첼린지, Maeil English Challenge, 영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까, 과장 없는 영어 학습 프로그램, 영어 공부 기대와 현실, 꾸준함으로 영어 실력 올리는 법, 실전 중심 영어 학습법">
-    <meta name="description" content="영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까? 과장 없는 영어 학습 프로그램으로 꾸준함으로 영어 실력 올리는 법을 제시합니다. 실전 중심 영어 학습법, 매일영 챌린지로 영어공부와 영어회화 실력을 향상시켜보세요.">
-    <title>매일영 챌린지 - 영어 스피킹 잘하는 비법 by 파워잉글리쉬</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/png" href="resources/Image20260107150048.png">
-    <meta property="og:image" content="resources/Image20260107150048.png">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="영어공부, 영어회화, 영어실력 향상, 영어학습 방법, 영어챌린지, 매일영 챌린지, 매일영챌린지, 매일영첼린지, 매일영 첼린지, Maeil English Challenge, 영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까, 과장 없는 영어 학습 프로그램, 영어 공부 기대와 현실, 꾸준함으로 영어 실력 올리는 법, 실전 중심 영어 학습법">
+  <meta name="description" content="영어 실력 향상의 현실적인 방법, 한 달 만에 영어 가능할까? 과장 없는 영어 학습 프로그램으로 꾸준함으로 영어 실력 올리는 법을 제시합니다. 실전 중심 영어 학습법, 매일영 챌린지로 영어공부와 영어회화 실력을 향상시켜보세요.">
+  <title>매일영 챌린지</title>
+
+  <link rel="canonical" href="https://m.pweng.net/landing.php">
+  <meta property="og:url" content="https://m.pweng.net/landing.php">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="매일영 챌린지">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="의지는 필요 없습니다. 입이 트이는 영어 강제 루틴, 매일영 챌린지">
+  <meta property="og:description" content="한 달 만에 원어민이 되는 기적은 없습니다. 하지만 매일 영어를 뱉을 수밖에 없는 시스템으로 당신의 영어 근육을 확실히 만듭니다.">
+
+  <meta property="og:image" content="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+  <meta property="og:image:secure_url" content="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:alt" content="매일영 챌린지 대표 이미지">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="의지는 필요 없습니다. 입이 트이는 영어 강제 루틴, 매일영 챌린지">
+  <meta name="twitter:description" content="한 달 만에 원어민이 되는 기적은 없습니다. 하지만 매일 영어를 뱉을 수밖에 없는 시스템으로 당신의 영어 근육을 확실히 만듭니다.">
+  <meta name="twitter:image" content="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+  <meta name="twitter:image:src" content="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+  <meta name="twitter:image:alt" content="매일영 챌린지 대표 이미지">
+
+  <meta name="image" content="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+  <link rel="image_src" href="https://m.pweng.net/resources/thumbnail.jpg?v=20260116">
+
+  <meta name="theme-color" content="#112747">
+  <meta name="apple-mobile-web-app-title" content="매일영 챌린지">
+  <meta name="application-name" content="매일영 챌린지">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="icon" href="https://m.pweng.net/favicon.ico?v=20260116">
+  <link rel="shortcut icon" href="https://m.pweng.net/favicon.ico?v=20260116">
+
+  <link rel="icon" type="image/png" href="https://m.pweng.net/resources/favicon.png?v=20260116">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://m.pweng.net/resources/favicon-32.png?v=20260116">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://m.pweng.net/resources/favicon-16.png?v=20260116">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://m.pweng.net/resources/apple-touch-icon.png?v=20260116">
+
 
     <style>
         @font-face {
@@ -672,7 +710,7 @@
         }
         
         .navbar-nav-custom a.active {
-        color: #ffffff;
+        color: #333333;
         }
         
         .hero-wrapper {
@@ -760,6 +798,14 @@
         height: auto !important;
         min-height: 376px;
         padding: 18px 16px 16px 16px;
+        }
+        
+        .card-icon {
+        width: 120px !important;
+        height: 134px !important;
+        left: auto !important;
+        right: 20px !important;
+        bottom: 20px !important;
         }
         
         .section-inner h2 {
@@ -1024,8 +1070,11 @@
         }
         
         .card-icon {
-        width: 120px !important;
-        height: 134px !important;
+        width: 100px !important;
+        height: 112px !important;
+        left: auto !important;
+        right: 16px !important;
+        bottom: 16px !important;
         }
         
         .footer-nav {
@@ -1456,7 +1505,7 @@
         <div class="section-inner">
             <h2>그래서 단언할 수 있습니다</h2>
             <p>영어 실력 향상은 대단한 무언가가 아니라 시스템 문제입니다.<br>매일영 챌린지는 "특별한 사람만 되게 만드는 프로그램"이 아닙니다.<br>누구나 따라올 수 있도록 영어를 생활 루틴으로 설계한 도구입니다.</p>
-            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button level-test-link">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1531,7 +1580,7 @@
         <div class="section-inner">
             <h2>1. 이미 영어로 소통·업무·생활이 완성된 분이라면</h2>
             <p>이미 영어로 업무를 처리하고, 해외 커뮤니케이션에 전혀 문제가 없다면<br>저희가 도움드릴 수 있는 영역은 많지 않습니다.<br>이 과정은 아직 영어가 장벽으로 느껴지는 분들을 위한 훈련입니다.</p>
-            <a href="https://www.pweng.net/level-test.php" class="cta-button">무료수업 신청하기</a>
+            <a href="https://www.pweng.net/level-test.php" class="cta-button level-test-link">무료수업 신청하기</a>
         </div>
     </section>
     
@@ -1790,12 +1839,12 @@
                 </div>
                 <div class="footer-right">
                     <nav class="footer-nav">
-                        <a href="https://m.pweng.net/login-v2.php">로그인</a>
-                        <a href="https://m.pweng.net/me/support.php">상담 요청</a>
-                        <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
-                        <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
-                        <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
-                        <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
+                        <a href="https://m.pweng.net/login-v2.php" class="dynamic-link" data-link-type="login">로그인</a>
+                        <a href="https://m.pweng.net/me/support.php" class="dynamic-link" data-link-type="support">상담 요청</a>
+                        <a href="https://m.pweng.net/faq-v2.php" class="dynamic-link" data-link-type="faq">FAQ</a>
+                        <a href="https://m.pweng.net/term-of-use.php" class="dynamic-link" data-link-type="terms">이용약관</a>
+                        <a href="https://m.pweng.net/privacy-policy.php" class="dynamic-link" data-link-type="privacy">개인정보 처리방침</a>
+                        <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">PC버전</a>
                     </nav>
                 </div>
             </div>
@@ -1818,12 +1867,12 @@
                     </a>
                 </div>
                 <nav class="footer-nav">
-                    <a href="https://m.pweng.net/login-v2.php">로그인</a>
-                    <a href="https://m.pweng.net/me/support.php">상담 요청</a>
-                    <a href="https://m.pweng.net/faq-v2.php">FAQ</a>
-                    <a href="https://m.pweng.net/term-of-use.php">이용약관</a>
-                    <a href="https://m.pweng.net/privacy-policy.php">개인정보 처리방침</a>
-                    <a href="https://www.pweng.net/index.php?site_type=PC">PC버전</a>
+                    <a href="https://m.pweng.net/login-v2.php" class="dynamic-link" data-link-type="login">로그인</a>
+                    <a href="https://m.pweng.net/me/support.php" class="dynamic-link" data-link-type="support">상담 요청</a>
+                    <a href="https://m.pweng.net/faq-v2.php" class="dynamic-link" data-link-type="faq">FAQ</a>
+                    <a href="https://m.pweng.net/term-of-use.php" class="dynamic-link" data-link-type="terms">이용약관</a>
+                    <a href="https://m.pweng.net/privacy-policy.php" class="dynamic-link" data-link-type="privacy">개인정보 처리방침</a>
+                    <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">PC버전</a>
                 </nav>
                 <div class="footer-info">
                     <p>와이즈에듀케이션아이(주) 사이트명: 파워잉글리쉬 대표이사 전상현</p>
@@ -1837,132 +1886,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-      <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const smoothScrollEnabled = false;
-          let isScrollingFromClick = false;
-          
-          function initializeActiveNav() {
-              const activeLink = document.querySelector('.navbar-nav-custom a.active');
-              if (activeLink) {
-                  const targetId = activeLink.getAttribute('href');
-                  updateActiveNav(targetId);
-              }
-          }
-          
-          function smoothScrollTo(targetPosition, duration) {
-              const startPosition = window.pageYOffset;
-              const distance = targetPosition - startPosition;
-              let startTime = null;
-              
-              function animation(currentTime) {
-                  if (startTime === null) startTime = currentTime;
-                  const timeElapsed = currentTime - startTime;
-                  const run = ease(timeElapsed, startPosition, distance, duration);
-                  window.scrollTo(0, run);
-                  if (timeElapsed < duration) {
-                      requestAnimationFrame(animation);
-                  } else {
-                      isScrollingFromClick = false;
-                  }
-              }
-              
-              function ease(t, b, c, d) {
-                  t /= d / 2;
-                  if (t < 1) return c / 2 * t * t + b;
-                  t--;
-                  return -c / 2 * (t * (t - 2) - 1) + b;
-              }
-              
-              requestAnimationFrame(animation);
-          }
-
-          function updateActiveNav(targetId) {
-              const navContainer = document.querySelector('.navbar-nav-custom');
-              const links = document.querySelectorAll('.navbar-nav-custom a');
-              
-              links.forEach((link, index) => {
-                  link.classList.remove('active');
-                  if (link.getAttribute('href') === targetId) {
-                      link.classList.add('active');
-                      
-                      if (window.innerWidth > 768) {
-                          navContainer.setAttribute('data-active', index);
-                      } else {
-
-                          const linkRect = link.getBoundingClientRect();
-                          const navRect = navContainer.getBoundingClientRect();
-                          const leftPosition = link.offsetLeft;
-                          const linkWidth = link.offsetWidth;
-                          
-                          const afterElement = navContainer;
-                          afterElement.style.setProperty('--mobile-left', leftPosition + 'px');
-                          afterElement.style.setProperty('--mobile-width', linkWidth + 'px');
-
-                          link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                      }
-                  }
-              });
-          }
-          
-          document.querySelectorAll('a[href^="#"]').forEach(link => {
-              link.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  const targetId = this.getAttribute('href');
-
-                  isScrollingFromClick = true;
-                  updateActiveNav(targetId);
-
-                  if (targetId === '#top') {
-                      if (smoothScrollEnabled) {
-                          smoothScrollTo(0, 400);
-                      } else {
-                          window.scrollTo(0, 0);
-                          isScrollingFromClick = false;
-                      }
-                  } else {
-                      const targetElement = document.querySelector(targetId);
-                      if (targetElement) {
-                          const targetPosition = targetElement.offsetTop - 50;
-                          if (smoothScrollEnabled) {
-                              smoothScrollTo(targetPosition, 400);
-                          } else {
-                              window.scrollTo(0, targetPosition);
-                              isScrollingFromClick = false;
-                          }
-                      }
-                  }
-              });
-          });
-
-          window.addEventListener('scroll', function() {
-              if (isScrollingFromClick) return;
-              
-              const scrollPosition = window.pageYOffset + 150; 
-              
-              const faqSection = document.querySelector('#faq');
-              const introSection = document.querySelector('#intro');
-              
-              let currentSection = '#top';
-              
-              if (faqSection && scrollPosition >= faqSection.offsetTop - 100) {
-                  currentSection = '#faq';
-              } else if (introSection && scrollPosition >= introSection.offsetTop - 100) {
-                  currentSection = '#intro';
-              } else {
-                  currentSection = '#top';
-              }
-              
-              const currentActive = document.querySelector('.navbar-nav-custom a.active');
-              const shouldBeActive = document.querySelector(`a[href="${currentSection}"]`);
-              
-              if (currentActive && shouldBeActive && currentActive !== shouldBeActive) {
-                  updateActiveNav(currentSection);
-              }
-          });
-          
-          initializeActiveNav();
-      });
-      </script>
+      <script src="js/main.js"></script>
 </body>
 </html>
