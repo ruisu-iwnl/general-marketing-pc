@@ -1833,7 +1833,8 @@
                     <div class="footer-logo">
                         <img src="resources/pweng.png" alt="PowerEnglish">
                         <div class="footer-logo-text">
-                            <span class="bold">PowerEnglish</span> <span class="regular">Education</span>
+                        <!-- <span class="bold">PowerEnglish</span> <span class="regular">Education</span> -->
+                        <span class="regular">Wise Education I Co., Ltd.</span>
                         </div>
                     </div>
                 </div>
@@ -1852,7 +1853,8 @@
                 <div class="footer-logo">
                     <img src="resources/pweng.png" alt="PowerEnglish">
                     <div class="footer-logo-text">
-                        <span class="bold">PowerEnglish</span> <span class="regular">Education</span>
+                        <!-- <span class="bold">PowerEnglish</span> <span class="regular">Education</span> -->
+                        <span class="regular">Wise Education I Co., Ltd.</span>
                     </div>
                 </div>
                 <div class="footer-social">
