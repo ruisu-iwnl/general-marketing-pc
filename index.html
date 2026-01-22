@@ -156,8 +156,10 @@
         color: #FFFFFF;
         font-size: 0.95rem;
         font-weight: 400;
-        display: inline-block;
+        display: block;
         line-height: 1.5;
+        text-align: center;
+        width: 100%;
         }
         
         .promo-banner a:hover {
@@ -485,11 +487,16 @@
         color: #FFFFFF;
         text-decoration: none;
         width: 239px;
-        height: 60px;
+        min-height: 60px;
+        height: auto;
+        padding: 16px 24px;
         border-radius: 5px;
         font-size: 18px;
         font-weight: 600;
+        line-height: 1.4;
         margin: 24px;
+        overflow: visible;
+        box-sizing: border-box;
         }
         
         .cta-button:hover {
@@ -520,6 +527,12 @@
         width: 149px;
         height: 167px;
         object-fit: contain;
+        }
+        
+        .cards-container > div h2,
+        .cards-container > div p,
+        .cards-container > div ul {
+        max-width: 650px;
         }
         
         .footer {
@@ -657,15 +670,31 @@
             border: 0;
         }
 
+        .spec-image {
+            width: 900px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 24px auto 0;
+        }
+
+        .spec-image:first-of-type {
+            margin-top: 24px;
+        }
         
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
         .promo-banner {
         padding: 10px 15px;
+        text-align: center;
         }
         
         .promo-banner a {
         font-size: 0.85rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 1.6;
         }
         
         .navbar-custom {
@@ -787,12 +816,12 @@
         }
         
         .content-section {
-        padding: 40px 20px;
+        padding: 40px 10px;
         }
         
         .section-inner {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
         box-sizing: border-box;
         }
         
@@ -806,15 +835,31 @@
         max-width: 900px;
         height: auto !important;
         min-height: 376px;
-        padding: 18px 16px 16px 16px;
+        padding: 18px 16px 10px 16px;
         }
         
         .card-icon {
         width: 120px !important;
         height: 134px !important;
-        left: auto !important;
-        right: 20px !important;
-        bottom: 20px !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: 10px !important;
+        transform: translateX(-50%) !important;
+        }
+        
+        .cards-container > div ul {
+        margin-bottom: 120px !important;
+        margin-top: 0px !important;
+        padding-bottom: 0px !important;
+        }
+        
+        .cards-container > div ul li {
+        margin-bottom: 0px !important;
+        }
+        
+        .cards-container > div ul li:last-child {
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
         }
         
         .section-inner h2 {
@@ -843,6 +888,12 @@
         line-height: 1;
         }
         
+        .spec-image {
+        width: 100% !important;
+        max-width: 900px;
+        margin: 20px 0 0 0 !important;
+        }
+        
         .cta-section {
         flex-direction: column;
         align-items: center;
@@ -861,6 +912,19 @@
         .kakao-button {
         width: auto;
         order: 1;
+        }
+        
+        .cta-button {
+        margin: 24px auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 60px !important;
+        height: auto !important;
+        padding: 16px 24px !important;
+        line-height: 1.4 !important;
+        overflow: visible !important;
+        box-sizing: border-box !important;
         }
         
         .footer {
@@ -989,6 +1053,19 @@
         }
         
         @media (max-width: 480px) {
+        .promo-banner {
+        padding: 10px 10px;
+        text-align: center;
+        }
+        
+        .promo-banner a {
+        font-size: 0.75rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 1.6;
+        }
+        
         .navbar-custom {
         padding: 0 2px;
         justify-content: center;
@@ -1042,6 +1119,27 @@
         max-height: 140px;
         }
         
+        .content-section {
+        padding: 40px 5px;
+        }
+        
+        .section-inner {
+        padding: 0 5px;
+        }
+        
+        .cta-button {
+        margin: 24px auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 60px !important;
+        height: auto !important;
+        padding: 16px 24px !important;
+        line-height: 1.4 !important;
+        overflow: visible !important;
+        box-sizing: border-box !important;
+        }
+        
         .section-inner h2 {
         font-size: 18px;
         }
@@ -1074,16 +1172,38 @@
         max-width: 900px;
         height: auto !important;
         min-height: 300px;
-        padding: 16px 14px 80px 14px;
+        padding: 16px 14px 8px 14px;
         margin: 20px auto 0 !important;
         }
         
         .card-icon {
         width: 100px !important;
         height: 112px !important;
-        left: auto !important;
-        right: 16px !important;
-        bottom: 16px !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: 8px !important;
+        transform: translateX(-50%) !important;
+        }
+        
+        .cards-container > div ul {
+        margin-bottom: 100px !important;
+        margin-top: 0px !important;
+        padding-bottom: 0px !important;
+        }
+        
+        .cards-container > div ul li {
+        margin-bottom: 0px !important;
+        }
+        
+        .cards-container > div ul li:last-child {
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+        }
+        
+        .spec-image {
+        width: 100% !important;
+        max-width: 900px;
+        margin: 16px 0 0 0 !important;
         }
         
         .footer-nav {
@@ -1176,7 +1296,8 @@
 <body id="top">
     <header class="promo-banner">
         <a href="#">
-            지금 레벨테스트하고 <span class="highlight">1,000</span>원 쿠폰 받자! <span class="arrow">></span>
+            <!-- 지금 레벨테스트하고 <span class="highlight">1,000</span>원 쿠폰 받자! <span class="arrow">></span> -->
+            무료 레벨테스트 받고 강사평가 남기면 <span class="highlight"></span>1,OOO</span>원 쿠폰 즉시 적립! <span class="arrow"></span>
         </a>
     </header>
     
@@ -1529,6 +1650,10 @@
                 <li>틀린 문장을 다시 말하게 만드는 복습 구조</li>
                 <li>스스로 공부하지 않아도 굴러가는 루틴 설계</li>
             </ul>
+            <!-- images will be placed here-->
+            <img src="resources/sect-09-01.png" alt="" class="spec-image">
+            <img src="resources/sect-09-02.png" alt="" class="spec-image">
+            <img src="resources/sect-09-03.png" alt="" class="spec-image">
         </div>
     </section>
     
@@ -1669,10 +1794,10 @@
                 <div style="width: 900px; height: 376px; margin: 0 auto; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">01</div>
                     <h2>"녹음 인증" — 안 하면 수업 참여 불가</h2>
-                    <p>수업 전, 온라인 교재의 핵심 문장을 직접 읽고 녹음하여 제출해야 합니다. 미션을 완<br>료해야만 그날의 수업에 참여할 수 있는 자격이 주어집니다.</p>
+                    <p>수업 전, 온라인 교재의 핵심 문장을 직접 읽고 녹음하여 제출해야 합니다. 미션을 완료해야만 그날의 수업에 참여할 수 있는 자격이 주어집니다.</p>
                     <ul>
-                        <li>실행 방식: 전담 강사가 카카오톡으로 직접 숙제를 내주고, 학습자는 'Practice' <br> 섹션 문장 녹음본을 강사에게 제출합니다.</li>
-                        <li>강제 장치: 나만을 기다리는 강사의 1:1 실시간 체크! '보는 공부'를 '말하는 공<br>부'로 바꾸는 가장 확실한 강제성입니다.</li>
+                        <li>실행 방식: 전담 강사가 카카오톡으로 직접 숙제를 내주고, 학습자는 'Practice' 섹션 문장 녹음본을 강사에게 제출합니다.</li>
+                        <li>강제 장치: 나만을 기다리는 강사의 1:1 실시간 체크! '보는 공부'를 '말하는 공부'로 바꾸는 가장 확실한 강제성입니다.</li>
                     </ul>
                     <img src="resources/ico-spec-1.png" alt="" class="card-icon">
                     <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
@@ -1682,10 +1807,10 @@
                 <div style="width: 900px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">02</div>
                     <h2>"외워 뱉기" — 교재를 덮어야 시작되는 수업</h2>
-                    <p>수업이 시작되면 교재에 의존할 수 없습니다. 강사는 교재 내용을 바탕으로 기습 질<br>문을 던지고, 학습자는 오직 암기한 내용을 바탕으로 즉각 대답해야 합니다.</p>
+                    <p>수업이 시작되면 교재에 의존할 수 없습니다. 강사는 교재 내용을 바탕으로 기습 질문을 던지고, 학습자는 오직 암기한 내용을 바탕으로 즉각 대답해야 합니다.</p>
                     <ul>
-                        <li>실행 방식: "교재 15페이지 세 번째 문장, '회의를 미루다'를 넣어서 과거형으로<br>말해보세요"</li>
-                        <li>훈련 효과: 텍스트 의존도를 0%로 낮춰, 전화가 오기 전 5분 동안 인생에서 가장<br>집중력 높은 '몰입의 시간'을 갖게 됩니다.</li>
+                        <li>실행 방식: "교재 15페이지 세 번째 문장, '회의를 미루다'를 넣어서 과거형으로 말해보세요"</li>
+                        <li>훈련 효과: 텍스트 의존도를 0%로 낮춰, 전화가 오기 전 5분 동안 인생에서 가장 집중력 높은 '몰입의 시간'을 갖게 됩니다.</li>
                     </ul>
                     <img src="resources/ico-spec-2.png" alt="" class="card-icon">
                     <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
@@ -1695,10 +1820,10 @@
                 <div style="width: 900px; height: 376px; margin: 24px auto 0; background-color: #fff; border-radius: 16px; padding: 32px; position: relative; text-align: left;">
                     <div class="card-number">03</div>
                     <h2>"강제 롤플레이" — 문장을 상황으로 바꾸는 시간</h2>
-                    <p>교재 속 딱딱한 문장들을 실제 대화로 바꿉니다. 강사와 함께 설정된 상황 속으로 들<br>어가 배운 표현을 완벽히 써먹을 때까지 훈련은 계속됩니다.</p>
+                    <p>교재 속 딱딱한 문장들을 실제 대화로 바꿉니다. 강사와 함께 설정된 상황 속으로 들어가 배운 표현을 완벽히 써먹을 때까지 훈련은 계속됩니다.</p>
                     <ul>
-                        <li>실행 방식: "제가 점원이고 학생분이 손님입니다. 교재의 예약 문장을 활용해 대<br>화를 시작하세요!"</li>
-                        <li>훈련 효과: 글로만 보던 문장이 실제 상황에서 '살아있는 언어'로 변환됩니다. 1:1<br> 수업이기에 틀린 발음과 뉘앙스까지 실시간으로 완벽 교정받습니다.</li>
+                        <li>실행 방식: "제가 점원이고 학생분이 손님입니다. 교재의 예약 문장을 활용해 대화를 시작하세요!"</li>
+                        <li>훈련 효과: 글로만 보던 문장이 실제 상황에서 '살아있는 언어'로 변환됩니다. 1:1 수업이기에 틀린 발음과 뉘앙스까지 실시간으로 완벽 교정받습니다.</li>
                     </ul>
                     <img src="resources/ico-spec-3.png" alt="" class="card-icon">
                     <div style="position: absolute; top: 25px; left: 80px; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background-color: #9BB3FF; opacity: 0.3;"></div>
