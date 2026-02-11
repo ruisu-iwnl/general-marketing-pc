@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Pretendard', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    /* B-1: 따뜻한 컬러 팔레트로 변경 - 육아맘 타겟 친화적 */
+    --color-primary: #5B8DB8;
+    --color-primary-dark: #4A7A9F;
+    --color-accent: #FF6B35;
+    --color-accent-hover: #e55a2b;
+    /* 추가: 따뜻한 배경색 */
+    --color-warm-bg: #FFFBF8;
+    --color-warm-bg-alt: #FFF5EE;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Counter animation */
+.counter-value {
+    display: inline-block;
+}
+
+/* FAQ accordion */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Sticky mobile CTA */
+.mobile-sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.mobile-sticky-cta.visible {
+    transform: translateY(0);
+}
+
+/* Toast notification */
+.toast-notification {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 60;
+    max-width: 340px;
+    width: calc(100% - 48px);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e5e7eb;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+    pointer-events: none;
+}
+.toast-notification.visible {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.toast-notification.hiding {
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+}
+
+@media (max-width: 767px) {
+    .toast-notification {
+        bottom: 70px;
+        left: 12px;
+        width: calc(100% - 24px);
+        max-width: none;
+    }
+}
+
+/* A-3: Exit Intent 팝업 스타일 */
+.exit-intent-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 110;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.exit-intent-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.exit-intent-popup {
+    background: white;
+    border-radius: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    transform: scale(0.9) translateY(-20px);
+    transition: transform 0.3s ease;
+}
+.exit-intent-overlay.visible .exit-intent-popup {
+    transform: scale(1) translateY(0);
+}
