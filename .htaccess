@@ -1,6 +1,45 @@
+# 디렉토리 목록 비활성화
+Options -Indexes
+
 <IfModule mod_rewrite.c>
-RewriteEngine On
+    RewriteEngine On
+    RewriteBase /
 
-RewriteRule ^\.well-known/ - [L]
+    # dev-tools 폴더는 직접 접근 허용
+    RewriteCond %{REQUEST_URI} ^/dev-tools/
+    RewriteRule ^ - [L]
 
+    # 모든 요청을 public/ 으로 전달
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
+
+# 보안: 민감한 파일 접근 차단
+<FilesMatch "^\.env$">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# composer.json, composer.lock 접근 차단
+<FilesMatch "^composer\.(json|lock)$">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# artisan CLI 접근 차단
+<Files "artisan">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</Files>
