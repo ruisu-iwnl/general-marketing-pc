@@ -1919,7 +1919,7 @@
                         <a href="https://m.pweng.net/faq-v2.php" class="dynamic-link" data-link-type="faq">FAQ</a>
                         <a href="https://m.pweng.net/term-of-use.php" class="dynamic-link" data-link-type="terms">이용약관</a>
                         <a href="https://m.pweng.net/privacy-policy.php" class="dynamic-link" data-link-type="privacy">개인정보 처리방침</a>
-                        <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">PC버전</a>
+                        <a href="https://dailychallenge.co.kr/" class="dynamic-link" data-link-type="pc-version">mobile 버전</a>
                     </nav>
                 </div>
             </div>
