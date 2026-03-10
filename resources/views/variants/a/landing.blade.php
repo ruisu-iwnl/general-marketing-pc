@@ -1604,7 +1604,10 @@
                 </ul>
                 <img src="{{ asset('landing/sect-09-01.png') }}" alt="" class="spec-image">
                 <img src="{{ asset('landing/sect-09-02.png') }}" alt="" class="spec-image">
-                <img src="{{ asset('landing/sect-09-03.png') }}" alt="" class="spec-image">
+                <img src="{{ asset('landing/sect-09-03.png') }}" alt="" class="spec-image" style="margin-bottom: 24px;">
+                <p>헬스장에 가서 기구만 만지고 나오면 몸이 바뀌지 않듯이, 영어도 수업만 듣고 책을 덮으면<br>실제로 말하는 실력은 늘기 어렵습니다. 영어가 늘지 않는 이유는 수업을 안 해서가 아니라,<br><b>수업 이후에 남는 훈련이 없기 때문입니다.</b></p>
+                <p>매일영챌린지의 선생님들은 단순히 수업만 진행하는 강사가 아니라,<br>학습자가 <b>계속 말하게 만드는 영어 스피킹 트레이너</b>입니다. 수업 중에 놓친 표현,<br>틀리게 말한 문장, 애매하게 넘어간 발음까지 모두 수업이 끝난 뒤<br><b>카카오톡 피드백으로 정리해 드립니다.</b></p>
+                <p>그리고 그냥 틀린 문장은 그냥 지나가지 않습니다.<br>다시 말하게 만들고, 자연스럽게 나올 때까지 반복하도록 안내합니다.<br>그래서 매일영챌린지는 수업으로 끝나는 영어가 아니라<br><b>말하게 만들면서 남는 영어</b>를 목표로 합니다.</p>
             </div>
         </section>
 
