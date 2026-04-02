@@ -1721,13 +1721,71 @@
         <section class="content-section">
             <div class="section-inner">
                 <h2>그래서, 매일영 챌린지입니다</h2>
-                <p>매일영 챌린지는<br>영어를 짧게 배워주겠다고 약속하지 않습니다.<br>대신 매일 영어를 쓰게 만드는 환경을 만듭니다.</p>
+                <p>매일영 챌린지는<br>영어를 잘하게 해주겠다고 약속하지 않습니다. 대신 <strong>매일 영어를 쓰게 만드는 환경</strong>을 만듭니다.</p>
                 <ul>
                     <li>하루 분량이 정해진 학습 구조</li>
-                    <li>고민하지 않아도 따라갈 수 있는 루틴</li>
+                    <li>생각하지 않아도 따라갈 수 있는 루틴</li>
                     <li>포기하지 않도록 설계된 난이도</li>
                 </ul>
-                <p>영어 실력이 느는 사람들의 공통점은 하나입니다.<br>매일 영어를 하는 사람이라는 것.</p>
+                <p>영어 실력이 느는 사람들의 공통점은 하나입니다. <strong>매일 영어를 하는 사람이라는 것.</strong></p>
+                <h2><span style="color:#E63552;">다양한</span> 커리큘럼</h2>
+                <p>무료 제공! 수업 맞춤 교재로 전화·화상영어 OK 뉴스·회화 등 실생활 영어를 쉽게 배워요</p>
+                <div role="img" aria-label="130개 이상의 주제별 맞춤 교재, 지금도 계속 제작 중"
+                    style="width:900px;max-width:100%;height:200px;margin:20px auto 0;box-sizing:border-box;border-radius:20px;overflow:hidden;background-color:#0f172a;background-image:url('{{ asset('landing/Section-10-01.png') }}');background-size:cover;background-position:center top;background-repeat:no-repeat;display:flex;flex-direction:column;justify-content:center;padding-left:72px;padding-right:24px;color:#fff;font-weight:700;font-size:clamp(20px,4.2vw,26px);line-height:1.35;text-align:left;">
+                    <span><span style="color:#ff4d6a;">130개</span> 이상의 주제별 맞춤 교재,</span><br>지금도 계속 제작 중이에요!
+                </div>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:24px;max-width:900px;margin-left:auto;margin-right:auto;">
+                    <div style="width:205px;flex-shrink:0;">
+                        <img src="{{ asset('landing/1.png') }}" alt="비즈니스" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">비즈니스</div>
+                        <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">직장인 영어 표현</div>
+                    </div>
+                    <div style="width:205px;flex-shrink:0;">
+                        <img src="{{ asset('landing/2.png') }}" alt="시험대비" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">시험대비</div>
+                        <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">시험 준비 집중</div>
+                    </div>
+                    <div style="width:205px;flex-shrink:0;">
+                        <img src="{{ asset('landing/3.png') }}" alt="프리토킹" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">프리토킹</div>
+                        <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">자유 주제 말하기</div>
+                    </div>
+                    <div style="width:205px;flex-shrink:0;">
+                        <img src="{{ asset('landing/4.png') }}" alt="기초다지기" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">기초다지기</div>
+                        <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">영어 기초 탄탄히</div>
+                    </div>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:24px;max-width:900px;margin-left:auto;margin-right:auto;">
+                    @if(file_exists(public_path('landing/5.png')))
+                        <div style="width:205px;flex-shrink:0;">
+                            <img src="{{ asset('landing/5.png') }}" alt="비즈니스" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">비즈니스</div>
+                            <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">직장인 영어 표현</div>
+                        </div>
+                    @endif
+                    @if(file_exists(public_path('landing/6.png')))
+                        <div style="width:205px;flex-shrink:0;">
+                            <img src="{{ asset('landing/6.png') }}" alt="시험대비" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">시험대비</div>
+                            <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">시험 준비 집중</div>
+                        </div>
+                    @endif
+                    @if(file_exists(public_path('landing/7.png')))
+                        <div style="width:205px;flex-shrink:0;">
+                            <img src="{{ asset('landing/7.png') }}" alt="기타" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">기타</div>
+                            <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">특별한 학습 콘텐츠</div>
+                        </div>
+                    @endif
+                    @if(file_exists(public_path('landing/8.png')))
+                        <div style="width:205px;flex-shrink:0;">
+                            <img src="{{ asset('landing/8.png') }}" alt="레인보우 시리즈" width="205" height="130" style="width:205px;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">레인보우 시리즈</div>
+                            <div style="color:#606466;font-size:13px;margin-top:4px;line-height:1.4;">어린이용 재미있는 교재</div>
+                        </div>
+                    @endif
+                </div>
             </div>
         </section>
 
