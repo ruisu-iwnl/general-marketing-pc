@@ -1786,6 +1786,170 @@
                         </div>
                     @endif
                 </div>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:24px;max-width:900px;margin-left:auto;margin-right:auto;">
+                    <div style="width:440px;max-width:100%;flex-shrink:0;">
+                        <img src="{{ asset('landing/cur-news-00.jpg') }}" alt="시니어 영자신문" width="440" height="130" style="width:440px;max-width:100%;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:16px;color:#000;">시니어 영자신문</div>
+                        <div style="color:#606466;font-size:13px;margin-top:3px;line-height:1.4;">영자 신문 - English Newspaper</div>
+                    </div>
+                    <div style="width:440px;max-width:100%;flex-shrink:0;">
+                        <img src="{{ asset('landing/cur-news-01.jpg') }}" alt="왕초보 영자신문" width="440" height="130" style="width:440px;max-width:100%;height:130px;object-fit:cover;border-radius:12px;display:block;">
+                        <div style="font-weight:700;margin-top:10px;font-size:16px;color:#000;">왕초보 영자신문</div>
+                        <div style="color:#606466;font-size:13px;margin-top:3px;line-height:1.4;">영자 신문 - English Newspaper</div>
+                    </div>
+                </div>
+                <div style="max-width:900px;margin:32px auto 0;margin-left:auto;margin-right:auto;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+                        <div style="font-weight:700;font-size:18px;color:#000;">기초다지기 &amp; 프리토킹</div>
+                        <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/1.jpg') }}" alt="기초동사 활용" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">기초동사 활용</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어 회화의 기본을 탄탄히 다질 수 있는 필수동사들의 의미를...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/2.jpg') }}" alt="프리토킹 1" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">프리토킹 1 (Yellow)</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어 회화의 기본을 탄탄히 다질 수 있는 필수동사들의 의미를...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/3.jpg') }}" alt="프리토킹 2" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">프리토킹 2 (Red)</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어 회화의 기본을 탄탄히 다질 수 있는 필수동사들의 의미를...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/4.jpg') }}" alt="프리토킹 3" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">프리토킹 3 (Blue)</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어 회화의 기본을 탄탄히 다질 수 있는 필수동사들의 의미를...</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-width:900px;margin:32px auto 0;margin-left:auto;margin-right:auto;">
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-bottom:16px;">
+                        <div style="width:430px;max-width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+                            <div style="font-weight:700;font-size:18px;color:#000;">디베이트</div>
+                            <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                        </div>
+                        <div style="width:430px;max-width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+                            <div style="font-weight:700;font-size:18px;color:#000;">정규회화</div>
+                            <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/5.jpg') }}" alt="디베이트 (영어스피치)" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">디베이트 (영어스피치)</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">20가지 주제의 영어스피치 주제와 88개 찬반토론 예문 등을...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/6.jpg') }}" alt="고급토론 (영어스피치)" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">고급토론 (영어스피치)</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">흥미로운 토론 주제에 대해 영어로 자신의 생각을 이야기...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/7.jpg') }}" alt="시니어 로워 비기너" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">시니어 로워 비기너</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">실생활과 밀접한 20가지 주제와 빈번하게 쓰이는 문장,...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/8.jpg') }}" alt="비지니스 이메일 작성법" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">비지니스 이메일 작성법</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">짧은 대답에서 벗어나 자연스러운 문장 만들기 목표로 20가지...</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-width:900px;margin:32px auto 0;margin-left:auto;margin-right:auto;">
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-bottom:16px;">
+                        <div style="width:430px;max-width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+                            <div style="font-weight:700;font-size:18px;color:#000;">비즈니스</div>
+                            <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                        </div>
+                        <div style="width:430px;max-width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+                            <div style="font-weight:700;font-size:18px;color:#000;">시험대비</div>
+                            <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/9.jpg') }}" alt="비즈니스 패턴잉글리쉬" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">비즈니스 패턴잉글리쉬</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">총5권. 실전 비즈니스 영어를 위한 완벽 대비, 상황 별 필수...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/10.jpg') }}" alt="Business Concepts" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">Business Concepts</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">이 책은 학생들이 온라인 세상에서의 비즈니스를 배울 수 있는...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/11.jpg') }}" alt="아이엘츠" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">아이엘츠</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">IELTS 면접 대비를 위한 기출문제 위주의 실전훈련, 면접관...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/12.jpg') }}" alt="OPIC STARTER" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">OPIC STARTER</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">스피킹 Part1 &amp; Part2 집중 학습 오픽 답변 시 필요한 기본...</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-width:900px;margin:32px auto 0;margin-left:auto;margin-right:auto;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+                        <div style="font-weight:700;font-size:18px;color:#000;">기타</div>
+                        <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/13.jpg') }}" alt="사진(이미지) 묘사" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">사진(이미지) 묘사</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">사진을 보고 영어로 묘사하는 연습을 통해 어휘력 향상과 스피킹</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/14.jpg') }}" alt="사진(이미지) 묘사" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">사진(이미지) 묘사</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">사진을 보고 영어로 묘사하는 연습을 통해 어휘력 향상과....</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/15.jpg') }}" alt="영어인터뷰" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">영어인터뷰</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어 인터뷰에서 꼭 필요한 문장을 익히고, 전략을 세워 예상질..</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/16.jpg') }}" alt="어학연수 준비" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:16px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">어학연수 준비</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">초,중급 회원님을 대상으로 해외 현지에서 바로 사용할 수 있는...</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-width:900px;margin:32px auto 0;margin-left:auto;margin-right:auto;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+                        <div style="font-weight:700;font-size:18px;color:#000;">레인보우 시리즈</div>
+                        <a href="#" style="color:#7C3AED;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap;">View all →</a>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/17.jpg') }}" alt="레드,오렌지" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:20px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">레드,오렌지</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어회화의 기초 수준의 이해와 학습이 필요한 학생을 대상으로</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/18.jpg') }}" alt="옐로우,그린" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:20px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">옐로우,그린</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">친숙한 내용에 대해 스스로 문장을 만들어 답할 수 있고, 시제와..</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/19.jpg') }}" alt="블루,퍼플" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:20px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">블루,퍼플</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">다양한 문장형식을 말할 수 있으며, 적절한 어휘사용으로...</div>
+                        </div>
+                        <div style="width:205px;max-width:100%;flex-shrink:0;">
+                            <img src="{{ asset('landing/20.jpg') }}" alt="토킹타임" width="205" height="130" style="width:205px;max-width:100%;height:130px;object-fit:cover;border-radius:20px;display:block;">
+                            <div style="font-weight:700;margin-top:10px;font-size:15px;color:#000;">토킹타임</div>
+                            <div style="color:#606466;font-size:12px;margin-top:4px;line-height:1.45;">영어회화를 중심으로 통합적 영어실력 향상을 위해 준비된...</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
